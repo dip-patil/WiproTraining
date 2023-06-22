@@ -8,7 +8,7 @@ public class MiniProject1 {
                             {"1006","Suman","1/1/2000","e","Manufacturing","23000","9000","4400"},
                             {"1007","Tanmay","12/6/2006","c","PM","29000","12000","10000"}};
 
-        String [][]data2 = {{"e","Engineer","20000"},
+        String [][]designation = {{"e","Engineer","20000"},
                             {"c","Consultant","32000"},
                             {"k","Clerk","12000"},
                             {"r","Receptionist","15000"},
@@ -24,6 +24,7 @@ public class MiniProject1 {
             {
                 
                 
+                
                     empname=emp1[i][col+1];
                     Dcode=emp1[i][col+3];
                     Depart=emp1[i][col+4];
@@ -33,12 +34,12 @@ public class MiniProject1 {
                 }
         }
 
-        // for(int i=0;i<data2.length;i++)
+        // for(int i=0;i<designation.length;i++)
         // {
-        //     if(Dcode.equals(data2[i][col]))
+        //     if(Dcode.equals(designation[i][col]))
         //     {
-        //         design=data2[i][col+1];
-        //         da=Integer.parseInt(data2[i][col+2]);
+        //         design=designation[i][col+1];
+        //         da=Integer.parseInt(designation[i][col+2]);
         //     }
         // }
 
@@ -46,27 +47,27 @@ public class MiniProject1 {
         {
             case "e":
                 design="Engineer";
-                da=Integer.parseInt(data2[0][2]);
+                da=Integer.parseInt(designation[0][2]);
                 break;
 
             case "c":
                 design="Consultant";
-                da=Integer.parseInt(data2[1][2]);
+                da=Integer.parseInt(designation[1][2]);
                 break;
 
             case "k":
                 design="Clerk";
-                da=Integer.parseInt(data2[2][2]);
+                da=Integer.parseInt(designation[2][2]);
                 break;
 
             case "r":
                 design="Receptionist";
-                da=Integer.parseInt(data2[3][2]);
+                da=Integer.parseInt(designation[3][2]);
                 break;
 
             case "m":
                 design="Manager";
-                da=Integer.parseInt(data2[4][2]);
+                da=Integer.parseInt(designation[4][2]);
                 break;
         }
 
